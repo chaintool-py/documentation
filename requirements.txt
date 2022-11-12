@@ -1,2 +1,2 @@
-chainlib-eth==0.3.1
-shep==0.2.9
+chainlib-eth==0.4.3
+chainsyncer~=0.7.0
