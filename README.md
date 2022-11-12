@@ -1,8 +1,16 @@
+# Chaintool documentation
+
+
+## Showcasing chaintool
+
+The most intuitive entry point to chaintool is most likely the `eth-monitor` tool. It can be installed directly from `pypi` using `pip install eth-monitor`.
+
+
 ## Documentation for chaintool
 
-Chaintool is still very much a work-in-progress, and so to with its documentation.
+Chaintool is still very much a work-in-progress, and so too is its documentation.
 
-So far, documentation efforts have been made in three areas, in order of most maintained first:
+So far, documentation efforts have been made in four areas, in order of most recently updated first:
 
 
 ### Code dependency diagram
@@ -11,13 +19,13 @@ The dependency graph is only available in as an unformatted **graphviz** documen
 
 Last time the author remembered to render it, it looked like this:
 
-![](https://g33k.holbrook.no/ee551bd9c81a0394449b1396a451ba37b5fdff77126ec3ed4cd0d1c4a4151be2)
+![](https://g33k.holbrook.no/b362bcba6683179736d9c5c40b6c377066f6af40c26c6efcb1a87aecb00333fd)
 
 It is defined in terms of three layers:
 
 * The lower layer (grey) consists of libraries that were developed within the context of `chaintool`, but have a higher generic scope.
-* The upper layer is all libraries that are considered part of the `chaintool` suite.
-* The higher layer (green) are tools and daemons building on the `chaintool` suite libraries.
+* The *core* layer contains all libraries that are considered part of the `chaintool` suite.
+* The higher layer (green) conprise of tools and daemons building on the `chaintool` suite libraries.
 
 
 ### Man pages

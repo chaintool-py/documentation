@@ -16,10 +16,10 @@ digraph {
 	chaind [ label="hi/chaind", style="filled", fillcolor="#aaffaa" ];
 	chaind_eth [ label="hi/chaind-eth", style="filled", fillcolor="#aaffaa" ];
 
-	eth_monitor [ label="eth-monitor", style="filled", fillcolor="#aaffaa" ];
+	eth_monitor [ label="hi/eth-monitor", style="filled", fillcolor="#aaffaa" ];
 
-	eth_erc20 [ label="tool/eth-erc20", style="filled", fillcolor="#aaffaa" ];
-	eth_erc721 [ label="tool/eth-erc721", style="filled", fillcolor="#aaffaa" ];
+	eth_erc20 [ label="hi/eth-erc20", style="filled", fillcolor="#aaffaa" ];
+	eth_erc721 [ label="hi/eth-erc721", style="filled", fillcolor="#aaffaa" ];
 
 	confini -> chainlib
 	hexathon -> chainlib
