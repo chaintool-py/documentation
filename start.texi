@@ -1,0 +1,27 @@
+\input texinfo
+@settitle chaintool
+
+@copying
+Released 2020-2022 under GPL3
+@end copying
+
+@titlepage
+@title chaintool
+@author Louis Holbrook
+
+@end titlepage
+
+@c
+@contents
+
+@ifnottex
+@node Top
+@top Introduction
+@end ifnottex
+@menu
+* top-overview ::
+* chainlib ::
+* cic-internal-integration ::
+@end menu
+
+@include /home/lash/src/contrib/grassrootseconomics/cic-dev-docs/build/chainlib.texi

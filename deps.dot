@@ -1,0 +1,52 @@
+digraph {
+	confini [ label="lo/confini", style="filled"; fillcolor="#cccccc" ];
+	hexathon [ label="lo/hexathon", style="filled"; fillcolor="#cccccc" ];
+	potaahto [ label="lo/potaahto", style="filled"; fillcolor="#cccccc" ];
+	leveldir [ label="lo/leveldir", style="filled"; fillcolor="#cccccc" ];
+	shep [ label="lo/shep", style="filled"; fillcolor="#cccccc" ];
+
+	chainlib [ label="chainlib" ];
+	chainlib_eth [ label="chainlib-eth" ];
+	funga [ label="funga" ];
+	funga_eth [ label="funga-eth" ];
+	eth_cache [ label="eth-cache" ];
+	chainsyncer [ label="chainsyncer" ];
+	chainqueue [ label="chainqueue" ];
+
+	chaind [ label="hi/chaind", style="filled", fillcolor="#aaffaa" ];
+	chaind_eth [ label="hi/chaind-eth", style="filled", fillcolor="#aaffaa" ];
+
+	eth_monitor [ label="eth-monitor", style="filled", fillcolor="#aaffaa" ];
+
+	eth_erc20 [ label="tool/eth-erc20", style="filled", fillcolor="#aaffaa" ];
+	eth_erc721 [ label="tool/eth-erc721", style="filled", fillcolor="#aaffaa" ];
+
+	confini -> chainlib
+	hexathon -> chainlib
+	potaahto -> chainlib
+	chainlib -> chainlib_eth
+	
+	hexathon -> funga
+	funga -> funga_eth
+
+	hexathon -> leveldir -> eth_cache
+
+	eth_cache -> chainsyncer
+	shep -> chainsyncer
+	shep -> chainqueue
+
+	chainsyncer -> chaind
+	chainqueue -> chaind
+	chaind -> chaind_eth
+
+	chainsyncer -> eth_monitor
+
+	chainlib_eth -> eth_erc20
+	chainlib_eth -> eth_erc721
+
+	funga -> chainlib
+	funga_eth -> chainlib_eth
+
+	chainlib_eth -> eth_monitor
+	chainlib_eth -> chaind_eth
+}
