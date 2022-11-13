@@ -4,6 +4,7 @@ digraph {
 	potaahto [ label="lo/potaahto", style="filled"; fillcolor="#cccccc" ];
 	leveldir [ label="lo/leveldir", style="filled"; fillcolor="#cccccc" ];
 	shep [ label="lo/shep", style="filled"; fillcolor="#cccccc" ];
+	aiee [ label="lo/alee", style="filled"; fillcolor="#cccccc" ];
 
 	chainlib [ label="chainlib" ];
 	chainlib_eth [ label="chainlib-eth" ];
@@ -21,6 +22,8 @@ digraph {
 	eth_erc20 [ label="hi/eth-erc20", style="filled", fillcolor="#aaffaa" ];
 	eth_erc721 [ label="hi/eth-erc721", style="filled", fillcolor="#aaffaa" ];
 
+	aiee -> chainlib
+
 	confini -> chainlib
 	hexathon -> chainlib
 	potaahto -> chainlib
@@ -30,6 +33,10 @@ digraph {
 	funga -> funga_eth
 
 	hexathon -> leveldir -> eth_cache
+
+	chainlib -> chainsyncer
+	chainlib -> chainqueue
+	chainlib_eth -> eth_cache
 
 	eth_cache -> chainsyncer
 	shep -> chainsyncer
