@@ -1,6 +1,6 @@
 # Chaintool documentation
 
-Chaintool is still very much a work-in-progress, and so too is its documentation.
+Chaintool is still very much a work-in-progress. So too is its documentation.
 
 This README, while still somewhat chaotic, aims to fill the void of a missing structured presentation, and make the introduction to chaintool a bit more friendly.
 
@@ -9,6 +9,15 @@ This README, while still somewhat chaotic, aims to fill the void of a missing st
 
 The most intuitive entry point to chaintool is most likely the `eth-monitor` tool. It can be installed directly from `pypi` using `pip install eth-monitor`.
 
+<video width="800" height="450" controls>
+    <source src="https://defalsify.org/chaintool_pychain_pitch.mp4">
+Your browser cannot embed this video. Please use the links below instead.
+</video>
+
+Source:
+
+* [video file](https://defalsify.org/chaintool_pychain_pitch.mp4)
+* [video file signatures](https://defalsify.org/chaintool_pychain_pitch.mp4.asc)
 
 ## Code components
 
