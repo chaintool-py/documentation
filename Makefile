@@ -12,9 +12,9 @@ doc-prep: prep
 
 prep:
 	mkdir -p build/out
-	#perl setup.pl $(SOURCES) build
 
 readme: prep diagram
+	bash build.sh
 
 diagram:
 	dot -Tsvg deps.dot > build/deps.svg

@@ -10,7 +10,7 @@ This README, while still somewhat chaotic, aims to fill the void of a missing st
 The most intuitive entry point to chaintool is most likely the `eth-monitor` tool. It can be installed directly from `pypi` using `pip install eth-monitor`.
 
 <video width="800" height="450" controls>
-    <source src="https://defalsify.org/chaintool_pychain_pitch.mp4">
+<source src="https://defalsify.org/chaintool_pychain_pitch.mp4">
 Your browser cannot embed this video. Please use the links below instead.
 </video>
 
