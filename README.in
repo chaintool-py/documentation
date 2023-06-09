@@ -1,5 +1,7 @@
 # Chaintool documentation
 
+**chaintool unfortunately does not currently work with python 3.11**
+
 Chaintool is still very much a work-in-progress. So too is its documentation.
 
 This README, while still somewhat chaotic, aims to fill the void of a missing structured presentation, and make the introduction to chaintool a bit more friendly.
