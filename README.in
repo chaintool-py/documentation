@@ -1,7 +1,5 @@
 # Chaintool documentation
 
-**chaintool unfortunately does not currently work with python 3.11**
-
 Chaintool is still very much a work-in-progress. So too is its documentation.
 
 This README, while still somewhat chaotic, aims to fill the void of a missing structured presentation, and make the introduction to chaintool a bit more friendly.
@@ -105,3 +103,15 @@ Aside from the "higher level" components listed above, two known EVM-based imple
 
 * [eth-erc20](https://git.defalsify.org/eth-erc20) - an implementation of the ERC20 token, which also includes an example token contract that lets authorized addresses arbitrarily mint tokens at any time.
 * [eth-erc721](https://git.defalsify.org/eth-erc721) - an implementation of the ERC721 "NFT" token, which also includes an example token contract that creates achievment badges for developed contributions.
+
+
+## Known issues
+
+The requirements for testing (`test_requirements.txt`) under each repository include dependencies that use rust components which use unstable features.
+
+The authors have used a "nightly" toolchain provided by the [rustup](https://rustup.rs/) tool to build test requirements. However, this is failing with newer versions of the rust toolchain.
+
+The authors report having successfully built with the `nightly-2022-11-14` toolchain. Hopefully this will work for others aswell.
+
+If any other toolchain is succesfully used, please report this and/or submit a git diff of this documentation including the most recent compatible toolchain to: [chaintool@defalsify.org](mailto:chaintool@defalsify.org).
+
